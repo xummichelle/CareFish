@@ -16,6 +16,7 @@
 		323C46382ABF6D2B00DB4737 /* CareFishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46372ABF6D2B00DB4737 /* CareFishTests.swift */; };
 		323C46422ABF6D2B00DB4737 /* CareFishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46412ABF6D2B00DB4737 /* CareFishUITests.swift */; };
 		323C46442ABF6D2B00DB4737 /* CareFishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46432ABF6D2B00DB4737 /* CareFishUITestsLaunchTests.swift */; };
+		323C46522ABF6F3200DB4737 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 323C46512ABF6F3200DB4737 /* HorizonCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		323C463D2ABF6D2B00DB4737 /* CareFishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareFishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323C46412ABF6D2B00DB4737 /* CareFishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareFishUITests.swift; sourceTree = "<group>"; };
 		323C46432ABF6D2B00DB4737 /* CareFishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareFishUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		323C46532ABFD18D00DB4737 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		323C46542ABFD1B200DB4737 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323C46522ABF6F3200DB4737 /* HorizonCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,8 @@
 		323C46142ABF6D2900DB4737 = {
 			isa = PBXGroup;
 			children = (
+				323C46542ABFD1B200DB4737 /* readme.md */,
+				323C46532ABFD18D00DB4737 /* .gitignore.md */,
 				323C461F2ABF6D2900DB4737 /* CareFish */,
 				323C46362ABF6D2B00DB4737 /* CareFishTests */,
 				323C46402ABF6D2B00DB4737 /* CareFishUITests */,
@@ -143,6 +149,9 @@
 			dependencies = (
 			);
 			name = CareFish;
+			packageProductDependencies = (
+				323C46512ABF6F3200DB4737 /* HorizonCalendar */,
+			);
 			productName = CareFish;
 			productReference = 323C461D2ABF6D2900DB4737 /* CareFish.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 323C46142ABF6D2900DB4737;
+			packageReferences = (
+				323C46502ABF6F3100DB4737 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+			);
 			productRefGroup = 323C461E2ABF6D2900DB4737 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		323C46502ABF6F3100DB4737 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		323C46512ABF6F3200DB4737 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 323C46502ABF6F3100DB4737 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 323C46152ABF6D2900DB4737 /* Project object */;
 }
