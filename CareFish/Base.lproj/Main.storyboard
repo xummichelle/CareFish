@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yBP-No-Hmr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -9,6 +9,74 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Check List View Controller-->
+        <scene sceneID="nbM-RZ-wpe">
+            <objects>
+                <viewController id="ySv-pE-U8f" customClass="CheckListViewController" customModule="CareFish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Op-Og-IrA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="byy-YQ-cRq">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="167"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Tasks" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNW-Hj-lCC">
+                                <rect key="frame" x="40" y="11" width="252" height="126"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yWR-Te-IMB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yWR-Te-IMB" firstAttribute="bottom" secondItem="byy-YQ-cRq" secondAttribute="bottom" constant="602" id="3yG-mV-9tE"/>
+                            <constraint firstItem="yWR-Te-IMB" firstAttribute="trailing" secondItem="yNW-Hj-lCC" secondAttribute="trailing" constant="101" id="BTY-ph-dSZ"/>
+                            <constraint firstItem="yNW-Hj-lCC" firstAttribute="leading" secondItem="8Op-Og-IrA" secondAttribute="leading" constant="40" id="PFP-YA-Ppf"/>
+                            <constraint firstItem="yWR-Te-IMB" firstAttribute="bottom" secondItem="yNW-Hj-lCC" secondAttribute="bottom" constant="632" id="Ynv-cJ-UNI"/>
+                            <constraint firstItem="byy-YQ-cRq" firstAttribute="top" secondItem="8Op-Og-IrA" secondAttribute="top" id="Yur-8H-CP9"/>
+                            <constraint firstItem="byy-YQ-cRq" firstAttribute="leading" secondItem="8Op-Og-IrA" secondAttribute="leading" id="ewG-7B-Jhn"/>
+                            <constraint firstItem="yNW-Hj-lCC" firstAttribute="top" secondItem="8Op-Og-IrA" secondAttribute="top" constant="11" id="nV1-2Y-PNz"/>
+                            <constraint firstItem="yWR-Te-IMB" firstAttribute="trailing" secondItem="byy-YQ-cRq" secondAttribute="trailing" id="nxf-v4-NeH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="checklist_icon" id="nFU-ci-Bkr"/>
+                    <connections>
+                        <outlet property="daily_tasks_header" destination="yNW-Hj-lCC" id="NL8-7f-hnA"/>
+                        <outlet property="header" destination="byy-YQ-cRq" id="SRL-Mh-0eJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJD-55-o6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="637"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hOH-tY-3zV">
+            <objects>
+                <viewController id="fpH-8u-q1l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bz5-27-FcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish_screen_screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="0NK-xW-BQw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LVB-3x-MCs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0NK-xW-BQw" firstAttribute="top" secondItem="bz5-27-FcQ" secondAttribute="topMargin" id="Dsm-lu-o9L"/>
+                            <constraint firstItem="LVB-3x-MCs" firstAttribute="trailing" secondItem="0NK-xW-BQw" secondAttribute="trailing" id="FHM-dG-TfW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0NK-xW-BQw" secondAttribute="bottom" id="KlS-hw-0y1"/>
+                            <constraint firstItem="0NK-xW-BQw" firstAttribute="leading" secondItem="LVB-3x-MCs" secondAttribute="leading" id="uTr-Qc-XQP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="fish_icon" id="3AH-Zd-jPG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YV-4l-6EB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="-202"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,11 +87,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-dp-1SD">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="137"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="167"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can do anything!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-Hq-YgK">
-                                <rect key="frame" x="40" y="40" width="252" height="33.666666666666657"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can do anything!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-Hq-YgK">
+                                <rect key="frame" x="40" y="70" width="252" height="67"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
                                 <color key="textColor" name="white_text_color"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -32,11 +100,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="E4H-dp-1SD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="692-eg-www"/>
-                            <constraint firstItem="ymA-Hq-YgK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="914-kh-d1V"/>
                             <constraint firstAttribute="trailing" secondItem="E4H-dp-1SD" secondAttribute="trailing" id="Ipj-jR-gMP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E4H-dp-1SD" secondAttribute="bottom" constant="602" id="Itm-Ad-nCD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E4H-dp-1SD" secondAttribute="trailing" id="J5v-yq-NUw"/>
                             <constraint firstItem="ymA-Hq-YgK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Jhz-i5-Izi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ymA-Hq-YgK" secondAttribute="bottom" constant="632" id="L8j-E2-0io"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ymA-Hq-YgK" secondAttribute="trailing" constant="101" id="jTl-aw-6i1"/>
+                            <constraint firstItem="ymA-Hq-YgK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="n7E-9s-iwT"/>
                             <constraint firstItem="E4H-dp-1SD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xLS-b4-kad"/>
                         </constraints>
                     </view>
@@ -48,38 +118,6 @@
             </objects>
             <point key="canvasLocation" x="1490.8396946564885" y="-882.3943661971831"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nbM-RZ-wpe">
-            <objects>
-                <viewController id="ySv-pE-U8f" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Op-Og-IrA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="yWR-Te-IMB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="checklist_icon" id="nFU-ci-Bkr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vJD-55-o6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1491" y="475"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hOH-tY-3zV">
-            <objects>
-                <viewController id="fpH-8u-q1l" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bz5-27-FcQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="LVB-3x-MCs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="fish_icon" id="3AH-Zd-jPG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7YV-4l-6EB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1491" y="-202"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="S9T-4b-akF">
             <objects>
@@ -90,9 +128,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lo9-kw-B0e"/>
                         <segue destination="fpH-8u-q1l" kind="relationship" relationship="viewControllers" id="vde-zm-xIT"/>
                         <segue destination="ySv-pE-U8f" kind="relationship" relationship="viewControllers" id="eZE-Lf-RT4"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lo9-kw-B0e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31Y-E3-3r9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,6 +141,7 @@
     <resources>
         <image name="checklist_icon" width="60" height="60"/>
         <image name="fish_icon" width="79" height="80"/>
+        <image name="fish_screen_screenshot" width="646" height="1164"/>
         <image name="header_rectangle" width="390" height="137"/>
         <image name="home_icon" width="60" height="60"/>
         <namedColor name="white_text_color">

@@ -17,6 +17,7 @@
 		323C46422ABF6D2B00DB4737 /* CareFishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46412ABF6D2B00DB4737 /* CareFishUITests.swift */; };
 		323C46442ABF6D2B00DB4737 /* CareFishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46432ABF6D2B00DB4737 /* CareFishUITestsLaunchTests.swift */; };
 		323C46522ABF6F3200DB4737 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 323C46512ABF6F3200DB4737 /* HorizonCalendar */; };
+		323C465A2AC0497100DB4737 /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46592AC0497100DB4737 /* CheckListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		323C46432ABF6D2B00DB4737 /* CareFishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareFishUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		323C46532ABFD18D00DB4737 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 		323C46542ABFD1B200DB4737 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		323C46592AC0497100DB4737 /* CheckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				323C46292ABF6D2B00DB4737 /* Assets.xcassets */,
 				323C462B2ABF6D2B00DB4737 /* LaunchScreen.storyboard */,
 				323C462E2ABF6D2B00DB4737 /* Info.plist */,
+				323C46592AC0497100DB4737 /* CheckListViewController.swift */,
 			);
 			path = CareFish;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323C46252ABF6D2900DB4737 /* ViewController.swift in Sources */,
+				323C465A2AC0497100DB4737 /* CheckListViewController.swift in Sources */,
 				323C46212ABF6D2900DB4737 /* AppDelegate.swift in Sources */,
 				323C46232ABF6D2900DB4737 /* SceneDelegate.swift in Sources */,
 			);
