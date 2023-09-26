@@ -1,6 +1,6 @@
 #  CareFish
 
-CareFish is a mood-tracking and to-do app where users build up an aquarium. Submitted for Technova 2023.
+CareFish is a mood-tracking and to-do app where users build up an aquarium. Top 6 overall for Technova 2023. view the Devpost submission (includes Figma prototype) [here](https://devpost.com/software/carefish).
 
 ## Inspiration
 Mood-tracking, journaling, and staying on top of tasks... All of these are important for your lifestyle and self-care, but it can be hard to organize, keep track, and stay motivated in all of this self-care work. As a result, keeping up with all these activities can be stressful and it can be hard to reap the benefits of all the hard work. [Studies](https://mhealth.jmir.org/2018/12/e11271/) have shown that smartphone apps are incredibly effective ways to bring mental health support and distress-reducing programs to users.
