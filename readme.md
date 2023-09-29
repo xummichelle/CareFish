@@ -1,6 +1,10 @@
 #  CareFish
 
-CareFish is a mood-tracking and to-do app where users build up an aquarium. Top 6 overall for Technova 2023. view the Devpost submission (includes Figma prototype) [here](https://devpost.com/software/carefish).
+CareFish is a mood-tracking and to-do app where users build up an aquarium. Submitted for Technova 2023. View the Devpost submission (includes Figma prototype) [here](https://devpost.com/software/carefish).
+
+
+<img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/599/318/datas/original.gif" width="200"/> <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/599/319/datas/original.gif" width="200"/> <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/599/320/datas/original.gif" width="200"/>
+<img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/599/317/datas/original.gif" width="200"/>
 
 ## Inspiration
 Mood-tracking, journaling, and staying on top of tasks... All of these are important for your lifestyle and self-care, but it can be hard to organize, keep track, and stay motivated in all of this self-care work. As a result, keeping up with all these activities can be stressful and it can be hard to reap the benefits of all the hard work. [Studies](https://mhealth.jmir.org/2018/12/e11271/) have shown that smartphone apps are incredibly effective ways to bring mental health support and distress-reducing programs to users.
@@ -37,4 +41,10 @@ We plan to include the following:
 - Adding and designing more decor and fish.
 - Increased accessibility with colour choices, labels, translating, text-to-speech, and more.
 - Login for users to save their data.
+
+## Acknowledgements
+Submission for TechNova 2023
+Team Carefish: Michelle Xu and Soomin Lee
+
+Used Airbnb's [HorizonCalendar](https://github.com/airbnb/HorizonCalendar) (https://github.com/airbnb/HorizonCalendar) UI component.
 
